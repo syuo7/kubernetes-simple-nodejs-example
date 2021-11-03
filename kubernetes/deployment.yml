@@ -7,10 +7,10 @@ spec:
   template:
     metadata:
       labels:
-        app: app-deploy
+        app: nodejs
   selector:
     matchLabels:
-      app: app-deploy
+      app: nodejs
     spec:
       containers:
         - name: application
