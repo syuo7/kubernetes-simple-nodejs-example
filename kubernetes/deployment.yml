@@ -3,13 +3,13 @@ kind: Deployment
 metadata:
   name: app-deployment
 spec:
-  template:
-    metadata:
-      labels:
-        app: nodejs
   selector:
     matchLabels:
       app: nodejs
+  template:
+    metadata:
+      labels:
+        app: nodejs   
     spec:
       containers:
         - name: application
