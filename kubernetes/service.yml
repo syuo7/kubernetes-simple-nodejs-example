@@ -4,7 +4,7 @@ metadata:
   name: app-service
   namespace: example
 spec:
-  type: LoadBalancer
+  type: NodePort
   ports:
     - name: http
       protocol: TCP
